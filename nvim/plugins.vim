@@ -29,6 +29,8 @@ Plug 'Shougo/deoplete.nvim'
 
 Plug 'zchee/deoplete-clang'
 
+Plug 'ervandew/supertab'
+
 Plug 'vimwiki/vimwiki'
 
 "Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -37,14 +39,57 @@ Plug 'vimwiki/vimwiki'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
+" Rust language support.
 Plug 'rust-lang/rust.vim'
+
+Plug 'sebastianmarkow/deoplete-rust'
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
 "Plugins for haskell
 Plug 'neovimhaskell/haskell-vim'
 
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+"Plug 'jakedouglas/exuberant-ctags'
+
+Plug 'honza/vim-snippets'
+
+Plug 'Townk/vim-autoclose'
+
+Plug 'tomtom/tcomment_vim'
+
+Plug 'tobyS/vmustache'
+
+Plug 'janko-m/vim-test'
+
+Plug 'maksimr/vim-jsbeautify'
+
+Plug 'vim-syntastic/syntastic'
+
+Plug 'neomake/neomake'
+
+Plug 'Shougo/neocomplete.vim'
+
+Plug 'tpope/vim-dispatch'
+
+" Markdown / Writting
+Plug 'reedes/vim-pencil'
+Plug 'tpope/vim-markdown'
+Plug 'jtratner/vim-flavored-markdown'
+
+" Git relate plugins
+Plug 'kablamo/vim-git-log'
+Plug 'gregsexton/gitv'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" TODO try ncm2 to completion
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-path'
 
 call plug#end()
 
