@@ -5,12 +5,6 @@ if empty(glob("~/.config/nvim/autoload/plug.vim"))
   execute '!curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 endif
 
-let vimsettings = '~/.config/nvim/languages'
-
-for fpath in split(globpath(vimsettings, '\*.vim'), '\n')
-  exe 'source' fpath
-endfor
-
 call plug#begin('~/.config/nvim/plugged')
 
 " Add ctrl-p fuzzy search to vim.
@@ -27,7 +21,9 @@ Plug 'neomake/neomake'
 
 Plug 'Shougo/deoplete.nvim'
 
-Plug 'zchee/deoplete-clang'
+"Plug 'zchee/deoplete-clang'
+
+Plug 'Shougo/deoplete-clangx'
 
 Plug 'ervandew/supertab'
 
@@ -67,8 +63,6 @@ Plug 'vim-syntastic/syntastic'
 
 Plug 'neomake/neomake'
 
-Plug 'Shougo/neocomplete.vim'
-
 Plug 'tpope/vim-dispatch'
 
 " Markdown / Writting
@@ -84,12 +78,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " TODO try ncm2 to completion
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-tmux'
-Plug 'ncm2/ncm2-path'
 
 call plug#end()
 
