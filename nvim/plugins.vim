@@ -19,6 +19,8 @@ Plug 'morhetz/gruvbox'
 " neomake is a code linting tool that runs in the background.
 Plug 'neomake/neomake'
 
+Plug 'w0rp/ale'
+
 Plug 'Shougo/deoplete.nvim'
 
 "Plug 'zchee/deoplete-clang'
@@ -45,7 +47,7 @@ Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.s
 "Plugins for haskell
 Plug 'neovimhaskell/haskell-vim'
 
-"Plug 'jakedouglas/exuberant-ctags'
+Plug 'parsonsmatt/intero-neovim'
 
 Plug 'honza/vim-snippets'
 
