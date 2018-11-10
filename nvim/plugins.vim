@@ -49,6 +49,8 @@ Plug 'neovimhaskell/haskell-vim'
 
 Plug 'parsonsmatt/intero-neovim'
 
+Plug 'universal-ctags/ctags'
+
 Plug 'honza/vim-snippets'
 
 Plug 'Townk/vim-autoclose'
