@@ -81,6 +81,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+Plug 'elmcast/elm-vim'
 " TODO try ncm2 to completion
 
 call plug#end()
