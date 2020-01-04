@@ -7,3 +7,5 @@ fi
 
 cp -r nvim ~/.config/nvim
 
+cp tmux.conf ~/.tmux.conf
+
