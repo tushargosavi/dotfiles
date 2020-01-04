@@ -19,13 +19,13 @@ Plug 'morhetz/gruvbox'
 " neomake is a code linting tool that runs in the background.
 Plug 'neomake/neomake'
 
-Plug 'w0rp/ale'
+"Plug 'w0rp/ale'
 
-Plug 'Shougo/deoplete.nvim'
+"Plug 'Shougo/deoplete.nvim'
 
 "Plug 'zchee/deoplete-clang'
 
-Plug 'Shougo/deoplete-clangx'
+"Plug 'Shougo/deoplete-clangx'
 
 Plug 'ervandew/supertab'
 
@@ -40,34 +40,36 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Rust language support.
 Plug 'rust-lang/rust.vim'
 
-Plug 'sebastianmarkow/deoplete-rust'
+"Plug 'sebastianmarkow/deoplete-rust'
 
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+"Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 
 "Plugins for haskell
-Plug 'neovimhaskell/haskell-vim'
+"Plug 'neovimhaskell/haskell-vim'
 
-Plug 'parsonsmatt/intero-neovim'
+"Plug 'parsonsmatt/intero-neovim'
 
 Plug 'universal-ctags/ctags'
 
-Plug 'honza/vim-snippets'
+"Plug 'honza/vim-snippets'
 
-Plug 'Townk/vim-autoclose'
+"Plug 'Townk/vim-autoclose'
 
-Plug 'tomtom/tcomment_vim'
+"Plug 'tomtom/tcomment_vim'
 
-Plug 'tobyS/vmustache'
+"Plug 'tobyS/vmustache'
 
-Plug 'janko-m/vim-test'
+"Plug 'janko-m/vim-test'
 
 Plug 'maksimr/vim-jsbeautify'
 
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 
 Plug 'neomake/neomake'
 
-Plug 'tpope/vim-dispatch'
+"Plug 'tpope/vim-dispatch'
 
 " Markdown / Writting
 Plug 'reedes/vim-pencil'
@@ -79,10 +81,11 @@ Plug 'kablamo/vim-git-log'
 Plug 'gregsexton/gitv'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
 
 Plug 'elmcast/elm-vim'
 " TODO try ncm2 to completion
+
+Plug 'derekwyatt/vim-scala'
 
 call plug#end()
 
