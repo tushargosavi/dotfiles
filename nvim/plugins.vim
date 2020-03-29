@@ -16,60 +16,22 @@ Plug 'bling/vim-airline'
 " gruvbox colorscheme. Seems to work the best for me.
 Plug 'morhetz/gruvbox'
 
-" neomake is a code linting tool that runs in the background.
-Plug 'neomake/neomake'
-
-"Plug 'w0rp/ale'
-
-"Plug 'Shougo/deoplete.nvim'
-
-"Plug 'zchee/deoplete-clang'
-
-"Plug 'Shougo/deoplete-clangx'
-
 Plug 'ervandew/supertab'
 
 Plug 'vimwiki/vimwiki'
-
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
-"Plug 'junegunn/fzf.vim'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Rust language support.
 Plug 'rust-lang/rust.vim'
 
-"Plug 'sebastianmarkow/deoplete-rust'
-
-"Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
-
-"Plugins for haskell
-"Plug 'neovimhaskell/haskell-vim'
-
-"Plug 'parsonsmatt/intero-neovim'
 
 Plug 'universal-ctags/ctags'
 
-"Plug 'honza/vim-snippets'
-
-"Plug 'Townk/vim-autoclose'
-
-"Plug 'tomtom/tcomment_vim'
-
-"Plug 'tobyS/vmustache'
-
-"Plug 'janko-m/vim-test'
-
 Plug 'maksimr/vim-jsbeautify'
 
-"Plug 'vim-syntastic/syntastic'
-
 Plug 'neomake/neomake'
-
-"Plug 'tpope/vim-dispatch'
 
 " Markdown / Writting
 Plug 'reedes/vim-pencil'
@@ -83,9 +45,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'elmcast/elm-vim'
-" TODO try ncm2 to completion
-
 Plug 'derekwyatt/vim-scala'
 
+Plug 'jpalardy/vim-slime'
 call plug#end()
 

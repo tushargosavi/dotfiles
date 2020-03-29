@@ -112,6 +112,10 @@ nmap <Leader>l :bnext<CR>
 nmap <Leader>h :bprevious<CR>
 " }
 
-let g:deoplete#sources#clang#libclang_path='/usr/lib/llvm-6.0/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header='/usr/include/clang/6.0.0/include'
+set clipboard=unnamed
+
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
+"let g:slime_target = "neovim"
+
 
