@@ -1,121 +1,52 @@
-" Change leader key to SPACE
-let mapleader="\<SPACE>"
+"allow some crazy configuration by no supporting backward compatibility.
+set nocompatible
 
-" Map ; to :
-nnoremap ; :
-
-" TODO Autosave on window change
+set backspace=indent,eol,start  "Allow backspace in insert mode
+set history=2000                "Store lots of :cmdline history
+set showcmd                     "Show incomplete cmds down the bottom
+set showmode                    "Show current mode down the bottom
+set gcr=a:blinkon0              "Disable cursor blink
+set visualbell                  "No sounds
+set autoread                    "Reload files changed outside vim
 set hidden
-
-filetype plugin on
-syntax on
-
-set noautoindent        " I indent my code myself.
-set nocindent           " I indent my code myself.
-"set smartindent        " Or I let the smartindent take care of it.
-set breakindent         " Indent line-breaks at the same level as code.
-set ttimeoutlen=100
-
 set termguicolors
 
-" Formatting {
-set showmatch           " Show matching brackets.
-set number              " Show the line numbers on the left side.
-set formatoptions+=o    " Continue comment marker in new lines.
-set expandtab           " Insert spaces when TAB is pressed.
-set tabstop=2           " Render TABs using this many spaces.
-set shiftwidth=2        " Indentation amount for < and > commands.
+"turn on syntax highlighting
+syntax on
 
-set nojoinspaces        " Prevents inserting two spaces after punctuation on a join (J)
+" Searching
+set incsearch       " Find the next match as we type the search
+set hlsearch        " Highlight searches by default
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...unless we type a capital
 
-" More natural splits
-set splitbelow          " Horizontal split below current.
-set splitright          " Vertical split to right of current.
+" Indent
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
 
-if !&scrolloff
-  set scrolloff=3       " Show next 3 lines while scrolling.
-endif
-if !&sidescrolloff
-  set sidescrolloff=5   " Show next 5 columns while side-scrolling.
-endif
-set nostartofline       " Do not jump to first character with page commands.
+" Line numbering
+set number                      "Line numbers are good
+set rnu
 
-" Tell Vim which characters to show for expanded TABs,
-" trailing whitespace, and end-of-lines. VERY useful!
-if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-endif
-set list                " Show problematic characters.
-" }
+" Splits
+set splitbelow
+set splitright
 
-" Remove trailing spaces.
-function! TrimWhitespace()
-  let l:save = winsaveview()
-  %s/\s\+$//e
-  call winrestview(l:save)
-endfunction
+set nostartofline
 
-" FIXME: Do not call this on makefile and sv files.
-" autocmd BufWritePre * call TrimWhitespace()
-nnoremap <leader>W :call TrimWhitespace()<CR>
+set clipboard=unnamed
 
-" Diff options
-set diffopt+=iwhite
-
-"Enter to go to EOF and backspace to go to start
-nnoremap <CR> G
-nnoremap <BS> gg
-" Stop cursor from jumping over wrapped lines
-nnoremap j gj
-nnoremap k gk
-" Make HOME and END behave like shell
-inoremap <C-E> <End>
-inoremap <C-A> <Home>
-
-" UI Options {
-" Colorscheme options.
-set bg=dark
+set bg=dark 
 colorscheme gruvbox
+
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-  of}"}
 
 " Also highlight all tabs and trailing whitespace characters.
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+$\|\t/
-
-" Relative numbering
-function! NumberToggle()
-if(&relativenumber == 1)
-  set nornu
-  set number
-else
-  set rnu
-  endif
-endfunc
-
-" Toggle between normal and relative numbering.
-nnoremap <leader>r :call NumberToggle()<cr>
-" }
-
-" Keybindings {
-" Save file
-nnoremap <Leader>w :w<CR>
-
-" Copy and paste from system clipboard (Might require xsel/xclip install)
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
-
-" Move between buffers
-nmap <Leader>l :bnext<CR>
-nmap <Leader>h :bprevious<CR>
-" }
-
-set clipboard=unnamed
-
-let g:slime_target = "tmux"
-let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
-"let g:slime_target = "neovim"
-
-

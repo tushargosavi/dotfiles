@@ -25,7 +25,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Rust language support.
 Plug 'rust-lang/rust.vim'
 
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'universal-ctags/ctags'
 
@@ -44,7 +44,7 @@ Plug 'gregsexton/gitv'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'elmcast/elm-vim'
+"Plug 'elmcast/elm-vim'
 Plug 'derekwyatt/vim-scala'
 
 Plug 'jpalardy/vim-slime'
