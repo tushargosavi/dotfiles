@@ -33,6 +33,8 @@ Plug 'maksimr/vim-jsbeautify'
 
 Plug 'neomake/neomake'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 " Markdown / Writting
 Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-markdown'
