@@ -54,6 +54,8 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "{right- 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+$\|\t/
 
+let g:tmux_navigator_save_on_switch = 2
+
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
 "let g:slime_target = "neovim"
