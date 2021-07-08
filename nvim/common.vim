@@ -1,3 +1,6 @@
+" Change leader key to SPACE
+let mapleader="\<SPACE>"
+
 "allow some crazy configuration by no supporting backward compatibility.
 set nocompatible
 
@@ -50,3 +53,7 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "{right- 
 " Also highlight all tabs and trailing whitespace characters.
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+$\|\t/
+
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
+"let g:slime_target = "neovim"
