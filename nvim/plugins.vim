@@ -13,8 +13,7 @@ Plug 'kien/ctrlp.vim'
 " airline is a better status line and a tab-bar for nvim.
 Plug 'bling/vim-airline'
 
-" gruvbox colorscheme. Seems to work the best for me.
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 Plug 'ervandew/supertab'
 
@@ -50,5 +49,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'derekwyatt/vim-scala'
 
 Plug 'jpalardy/vim-slime'
+
+Plug 'liuchengxu/vim-which-key'
+
 call plug#end()
 
